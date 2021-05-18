@@ -31,10 +31,12 @@ public class Lab2 {
     public float calculate(float x) {
 
         // log(x)/(x-5)   
-        if (x <= 0 || 6 - x <= 0.01) {
+        if (x <= 0 || Math.abs(5 - x) <= 0.01) {
             return Integer.MAX_VALUE;
         }
-        return (float) (Math.log(x) / (x - 5));
+        return (float) (Math.log10(x) / (x - 5));
+        
+        
     }
 
     public String showLab2Result(float x) {
