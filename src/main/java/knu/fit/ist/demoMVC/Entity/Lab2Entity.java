@@ -9,12 +9,12 @@ package knu.fit.ist.demoMVC.Entity;
  *
  * @author 38068
  */
-public class Lab2 {
+public class Lab2Entity {
     
     private int fieldInt;
     private String fieldString;
 
-    public Lab2() {
+    public Lab2Entity() {
     }
 
     public int getFieldInt() {

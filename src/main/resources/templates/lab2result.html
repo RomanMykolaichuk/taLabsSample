@@ -16,12 +16,16 @@ and open the template in the editor.
         
         
         <h3>Lab2 object</h3>
-       <form action="./lab2result">
-           <input type="text" name="x" placeholder="Enter x"/>
-            <input type="submit" value="Ok"/>
-        </form>
         
-       
+        <p>Equation is: log(x)/(x-5)</p>
+        <p th:text="'x= '+${x}"></p>
+        <p th:text="'result= '+${result}"></p>
+        
+        
+        
+        <form action="./">
+            <input type="submit" value="Home"/>
+        </form>
         
     </body>
 </html>

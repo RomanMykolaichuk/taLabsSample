@@ -5,7 +5,7 @@
  */
 package knu.fit.ist.demoMVC.controller;
 
-import knu.fit.ist.demoMVC.Entity.Lab2;
+import knu.fit.ist.demoMVC.Entity.Lab2Entity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,22 +29,6 @@ public class LabsController {
     }
     
     
-    @GetMapping("/lab2")
-    public String lab2(Model model){
     
-        String result="lab2result";
-                
-        model.addAttribute("result",result);
-        
-        Lab2 lab2 = new Lab2();
-        
-        lab2.setFieldInt(10);
-        lab2.setFieldString("string field");
-        
-        
-        model.addAttribute("lab2", lab2);
-        
-    return "lab2";
-    }
     
 }
